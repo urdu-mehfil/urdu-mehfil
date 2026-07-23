@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>محفل آرکائیو</title>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="/pagefind/pagefind-ui.js"></script>
+</head>
+
+<body>
+  <h1>محفل آرکائیو</h1>
+  <p><a href="categories/index.html">تمام زمرہ جات دیکھیں</a></p>
+  <div id="search"></div>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      new PagefindUI({
+        element: "#search", showSubResults: true, translations: {
+          placeholder: "تلاش کریں",
+          clear_search: "صاف کریں",
+          load_more: "مزید نتائج",
+          search_label: "تلاش",
+          zero_results: "کوئی نتیجہ نہیں ملا",
+          many_results: "[COUNT] نتائج"
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

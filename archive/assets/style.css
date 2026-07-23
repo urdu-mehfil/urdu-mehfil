@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Mehr Nastaliq";
+  src: url("mehr.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --bg: #faf9f6;
+  --card-bg: #ffffff;
+  --text: #2b2b2b;
+  --muted: #7a7a7a;
+  --accent: #7a1f2b;
+  --border: #e6e2da;
+  --pagefind-ui-font: "Mehr Nastaliq", Tahoma, sans-serif;
+}
+
+body {
+  font-family: "Mehr Nastaliq", Tahoma, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+  line-height: 1.9;
+  font-size: 1.1em;
+}
+
+h1 {
+  font-size: 2em;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+}
+
+.pagefind-ui {
+  direction: rtl;
+  text-align: right;
+}
+
+.post {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2em 1.5em;
+  margin-bottom: 1.2em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  font-size: 1.2em;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 0.6em;
+}
+
+.content {
+  text-align: start;
+}
+
+.source {
+  color: var(--muted);
+  font-size: 0.75em;
+  margin-top: 2em;
+}
+
+.pagenav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin: 1.5em 0;
+  padding: 0.6em 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.pagenav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pagenav a:hover {
+  text-decoration: underline;
+}
+
+.pagelist {
+  font-size: 0.85em;
+  color: var(--muted);
+  margin: 1em 0;
+  line-height: 2.4;
+}
+
+.pagelist a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-inline-end: 0.3em;
+}
+
+.pagelist a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-inline-start: 1.2em;
+}
+
+li {
+  margin: 0.4em 0;
+}
